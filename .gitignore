@@ -1,3 +1,4 @@
 *.org
 tomcat/logs/*
 tomcat/webapps/*
+nginx/data/*
