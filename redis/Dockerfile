@@ -1,5 +1,2 @@
-FROM ubuntu:latest
-
-RUN apt-get update && apt-get install -y redis-server
-EXPOSE 6379
-ENTRYPOINT ["/usr/bin/redis-server"]
+FROM redis:3.2
+MAINTAINER "bucketzxm <bucketzxm@gmail.com>"
