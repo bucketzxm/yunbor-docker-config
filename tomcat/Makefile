@@ -6,8 +6,9 @@ run:
 	mkdir -p webapps
 	docker run -d -p 8080:8080 \
 		-v `pwd`/logs:/usr/local/tomcat/logs \
-		-v `pwd`/webapps:/usr/local/tomcat/webapps --name yunbor_tomcat bucketzxm/tomcat:8.0-jre8
-#		-v `pwd`/conf_bak:/usr/local/tomcat/conf \
+		-v `pwd`/conf:/usr/local/tomcat/conf \
+		--name yunbor_tomcat bucketzxm/tomcat:8.0-jre8
+		# -v `pwd`/webapps:/usr/local/tomcat/webapps \
 
 #	docker cp `pwd`/conf/server.xml yunbor_tomcat:/usr/local/tomcat/conf
 #	docker cp `pwd`/conf/web.xml yunbor_tomcat:/usr/local/tomcat/conf
